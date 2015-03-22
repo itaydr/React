@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LoginViewController.h
 //  React
 //
 //  Created by Itay Dressler on 3/22/15.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ParseUI.h>
 
-@interface ViewController : UIViewController
-
+@interface LoginViewController : PFLogInViewController
 
 @end
-

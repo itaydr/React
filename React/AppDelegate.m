@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import <PFFacebookUtils.h>
 
 @interface AppDelegate ()
 
@@ -23,6 +24,7 @@
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
+    [PFFacebookUtils initializeFacebook];
     return YES;
 }
 
@@ -46,6 +48,18 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    BOOL wasHandled = false;
+    
+    if ([PFFacebookUtils session]) {
+        wasHandled |= [FBAppCall handleOpenURL:url sourceApplication:sourceApplication withSession:[PFFacebookUtils session]];
+    } else {
+        wasHandled |= [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+    }
+    
+    return wasHandled;
 }
 
 @end

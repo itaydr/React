@@ -20,24 +20,95 @@
             </objects>
             <point key="canvasLocation" x="-302" y="-287"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Test View Controller-->
         <scene sceneID="WR6-Uf-Ku9">
             <objects>
-                <viewController id="dr3-Cl-mmP" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="dr3-Cl-mmP" customClass="TestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jIf-Uw-npG"/>
                         <viewControllerLayoutGuide type="bottom" id="WDm-Sa-wkU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="skd-G8-IxE">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2P-5z-aPo" userLabel="camera">
+                                <rect key="frame" x="161" y="185" width="54" height="30"/>
+                                <state key="normal" title="Camera">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bC9-ev-eQB" kind="show" id="5Hp-H0-wxq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="q2P-5z-aPo" secondAttribute="centerX" id="PKx-9v-0TC"/>
+                            <constraint firstItem="q2P-5z-aPo" firstAttribute="top" secondItem="jIf-Uw-npG" secondAttribute="bottom" constant="121" id="bEj-8x-6xj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qLX-PG-K0b"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="QcZ-Ez-ZPx" kind="presentation" identifier="login" id="5xQ-mP-grC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59J-1y-xPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="496" y="-287"/>
+            <point key="canvasLocation" x="544" y="-287"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="btO-hL-2Q4">
+            <objects>
+                <viewController id="QcZ-Ez-ZPx" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NnS-Fl-Too"/>
+                        <viewControllerLayoutGuide type="bottom" id="M7c-Xg-KnA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qIq-Gi-j7T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xkV-33-XXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="-943"/>
+        </scene>
+        <!--Test Camera View Controller-->
+        <scene sceneID="kgR-pa-y63">
+            <objects>
+                <viewController id="bC9-ev-eQB" customClass="TestCameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wsy-vQ-UvF"/>
+                        <viewControllerLayoutGuide type="bottom" id="tLB-te-gYl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rcz-CC-XtK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roa-D3-ij0">
+                                <rect key="frame" x="172" y="617" width="31" height="30"/>
+                                <state key="normal" title="stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopPressed:" destination="bC9-ev-eQB" eventType="touchUpInside" id="9Cc-rx-rJK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tLB-te-gYl" firstAttribute="top" secondItem="roa-D3-ij0" secondAttribute="bottom" constant="20" id="eCA-uf-BAj"/>
+                            <constraint firstAttribute="centerX" secondItem="roa-D3-ij0" secondAttribute="centerX" constant="0.5" id="exZ-mM-vml"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="da4-vI-6Av" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="-224"/>
         </scene>
     </scenes>
 </document>

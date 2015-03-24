@@ -10,10 +10,12 @@ PODS:
   - ParseUI (1.1.1):
     - Parse (~> 1.6)
     - ParseFacebookUtils (~> 1.6)
+  - PBJVision (0.4.0)
   - pop (1.0.7)
 
 DEPENDENCIES:
   - ParseUI
+  - PBJVision
   - pop
 
 SPEC CHECKSUMS:
@@ -22,6 +24,7 @@ SPEC CHECKSUMS:
   Parse: a21db4037d70a68a4ec64ecc0f327ed475cc14f8
   ParseFacebookUtils: 4d58d0f133fa1af52f3a8d5caaa55cd435118ac4
   ParseUI: f7e9e0e5271f75a19c74ead8fdd95d36160e268e
+  PBJVision: f1b256379799784dc26b0cdd39be365e69d188b0
   pop: 2f14a1ea61339767af9e66741b418c831b3844df
 
 COCOAPODS: 0.35.0

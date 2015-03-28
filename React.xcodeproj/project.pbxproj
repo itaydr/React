@@ -16,6 +16,26 @@
 		0ECA65E31ABF58B40068B8FC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ECA65E11ABF58B40068B8FC /* LaunchScreen.xib */; };
 		0ECA65EF1ABF58B40068B8FC /* ReactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA65EE1ABF58B40068B8FC /* ReactTests.m */; };
 		0ECA662D1ABF637E0068B8FC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA662C1ABF637E0068B8FC /* LoginViewController.m */; };
+		0ED342941AC6BF5C009F18E5 /* TestAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED342931AC6BF5C009F18E5 /* TestAudioManager.m */; };
+		0ED342AD1AC6BFF3009F18E5 /* AudioController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0ED342981AC6BFF3009F18E5 /* AudioController.mm */; };
+		0ED342B31AC6BFF3009F18E5 /* button_press.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0ED342A51AC6BFF3009F18E5 /* button_press.caf */; };
+		0ED342B41AC6BFF3009F18E5 /* fft_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED342A71AC6BFF3009F18E5 /* fft_off.png */; };
+		0ED342B51AC6BFF3009F18E5 /* fft_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED342A81AC6BFF3009F18E5 /* fft_on.png */; };
+		0ED342B61AC6BFF3009F18E5 /* mute_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED342A91AC6BFF3009F18E5 /* mute_off.png */; };
+		0ED342B71AC6BFF3009F18E5 /* mute_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED342AA1AC6BFF3009F18E5 /* mute_on.png */; };
+		0ED342B81AC6BFF3009F18E5 /* oscilloscope.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED342AB1AC6BFF3009F18E5 /* oscilloscope.png */; };
+		0ED342B91AC6BFF3009F18E5 /* sonogram.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED342AC1AC6BFF3009F18E5 /* sonogram.png */; };
+		0ED342C31AC6C2F8009F18E5 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ED342BC1AC6C2F8009F18E5 /* CADebugMacros.cpp */; };
+		0ED342C41AC6C2F8009F18E5 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ED342BF1AC6C2F8009F18E5 /* CAStreamBasicDescription.cpp */; };
+		0ED342C51AC6C2F8009F18E5 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ED342C11AC6C2F8009F18E5 /* CAXException.cpp */; };
+		0ED342C71AC6C697009F18E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED342C61AC6C697009F18E5 /* AudioToolbox.framework */; };
+		0ED342C91AC6C6A0009F18E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED342C81AC6C6A0009F18E5 /* UIKit.framework */; };
+		0ED342CB1AC6C6A9009F18E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED342CA1AC6C6A9009F18E5 /* Foundation.framework */; };
+		0ED342CD1AC6C6B4009F18E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED342CC1AC6C6B4009F18E5 /* QuartzCore.framework */; };
+		0ED342CF1AC6C89D009F18E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED342CE1AC6C89D009F18E5 /* AVFoundation.framework */; };
+		0ED342D11AC6C8A7009F18E5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED342D01AC6C8A7009F18E5 /* Accelerate.framework */; };
+		0ED342D31AC6C8B4009F18E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED342D21AC6C8B4009F18E5 /* CoreGraphics.framework */; };
+		0ED342D51AC6C8BE009F18E5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED342D41AC6C8BE009F18E5 /* OpenGLES.framework */; };
 		3CBB2840227CA709595E1C40 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC119C3E2AB6E05E422F9374 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +67,33 @@
 		0ECA65EE1ABF58B40068B8FC /* ReactTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactTests.m; sourceTree = "<group>"; };
 		0ECA662B1ABF637E0068B8FC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0ECA662C1ABF637E0068B8FC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0ED342921AC6BF5C009F18E5 /* TestAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAudioManager.h; sourceTree = "<group>"; };
+		0ED342931AC6BF5C009F18E5 /* TestAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAudioManager.m; sourceTree = "<group>"; };
+		0ED342971AC6BFF3009F18E5 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
+		0ED342981AC6BFF3009F18E5 /* AudioController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioController.mm; sourceTree = "<group>"; };
+		0ED342A51AC6BFF3009F18E5 /* button_press.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = button_press.caf; sourceTree = "<group>"; };
+		0ED342A71AC6BFF3009F18E5 /* fft_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fft_off.png; sourceTree = "<group>"; };
+		0ED342A81AC6BFF3009F18E5 /* fft_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fft_on.png; sourceTree = "<group>"; };
+		0ED342A91AC6BFF3009F18E5 /* mute_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mute_off.png; sourceTree = "<group>"; };
+		0ED342AA1AC6BFF3009F18E5 /* mute_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mute_on.png; sourceTree = "<group>"; };
+		0ED342AB1AC6BFF3009F18E5 /* oscilloscope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oscilloscope.png; sourceTree = "<group>"; };
+		0ED342AC1AC6BFF3009F18E5 /* sonogram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sonogram.png; sourceTree = "<group>"; };
+		0ED342BB1AC6C2F8009F18E5 /* CABitOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABitOperations.h; sourceTree = "<group>"; };
+		0ED342BC1AC6C2F8009F18E5 /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		0ED342BD1AC6C2F8009F18E5 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		0ED342BE1AC6C2F8009F18E5 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		0ED342BF1AC6C2F8009F18E5 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		0ED342C01AC6C2F8009F18E5 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		0ED342C11AC6C2F8009F18E5 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		0ED342C21AC6C2F8009F18E5 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		0ED342C61AC6C697009F18E5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0ED342C81AC6C6A0009F18E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0ED342CA1AC6C6A9009F18E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0ED342CC1AC6C6B4009F18E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0ED342CE1AC6C89D009F18E5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0ED342D01AC6C8A7009F18E5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		0ED342D21AC6C8B4009F18E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0ED342D41AC6C8BE009F18E5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		9867F4968E1206FF202280DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BB6EF320368387407B9CC74B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CC119C3E2AB6E05E422F9374 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +104,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED342D51AC6C8BE009F18E5 /* OpenGLES.framework in Frameworks */,
+				0ED342D31AC6C8B4009F18E5 /* CoreGraphics.framework in Frameworks */,
+				0ED342D11AC6C8A7009F18E5 /* Accelerate.framework in Frameworks */,
+				0ED342CF1AC6C89D009F18E5 /* AVFoundation.framework in Frameworks */,
+				0ED342CD1AC6C6B4009F18E5 /* QuartzCore.framework in Frameworks */,
+				0ED342CB1AC6C6A9009F18E5 /* Foundation.framework in Frameworks */,
+				0ED342C91AC6C6A0009F18E5 /* UIKit.framework in Frameworks */,
+				0ED342C71AC6C697009F18E5 /* AudioToolbox.framework in Frameworks */,
 				3CBB2840227CA709595E1C40 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,10 +129,13 @@
 		0E89E45B1AC21B7400B142B3 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				0ED342951AC6BFF3009F18E5 /* Audio */,
 				0E89E45C1AC21B9000B142B3 /* TestViewController.h */,
 				0E89E45D1AC21B9000B142B3 /* TestViewController.m */,
 				0E89E45F1AC21E0600B142B3 /* TestCameraViewController.h */,
 				0E89E4601AC21E0600B142B3 /* TestCameraViewController.m */,
+				0ED342921AC6BF5C009F18E5 /* TestAudioManager.h */,
+				0ED342931AC6BF5C009F18E5 /* TestAudioManager.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -184,9 +242,81 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0ED342951AC6BFF3009F18E5 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				0ED342BA1AC6C2F8009F18E5 /* PublicUtility */,
+				0ED342961AC6BFF3009F18E5 /* Classes */,
+				0ED342A31AC6BFF3009F18E5 /* Resources */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		0ED342961AC6BFF3009F18E5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0ED342971AC6BFF3009F18E5 /* AudioController.h */,
+				0ED342981AC6BFF3009F18E5 /* AudioController.mm */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0ED342A31AC6BFF3009F18E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0ED342A41AC6BFF3009F18E5 /* audio */,
+				0ED342A61AC6BFF3009F18E5 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0ED342A41AC6BFF3009F18E5 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				0ED342A51AC6BFF3009F18E5 /* button_press.caf */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
+		0ED342A61AC6BFF3009F18E5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0ED342A71AC6BFF3009F18E5 /* fft_off.png */,
+				0ED342A81AC6BFF3009F18E5 /* fft_on.png */,
+				0ED342A91AC6BFF3009F18E5 /* mute_off.png */,
+				0ED342AA1AC6BFF3009F18E5 /* mute_on.png */,
+				0ED342AB1AC6BFF3009F18E5 /* oscilloscope.png */,
+				0ED342AC1AC6BFF3009F18E5 /* sonogram.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		0ED342BA1AC6C2F8009F18E5 /* PublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				0ED342BB1AC6C2F8009F18E5 /* CABitOperations.h */,
+				0ED342BC1AC6C2F8009F18E5 /* CADebugMacros.cpp */,
+				0ED342BD1AC6C2F8009F18E5 /* CADebugMacros.h */,
+				0ED342BE1AC6C2F8009F18E5 /* CAMath.h */,
+				0ED342BF1AC6C2F8009F18E5 /* CAStreamBasicDescription.cpp */,
+				0ED342C01AC6C2F8009F18E5 /* CAStreamBasicDescription.h */,
+				0ED342C11AC6C2F8009F18E5 /* CAXException.cpp */,
+				0ED342C21AC6C2F8009F18E5 /* CAXException.h */,
+			);
+			path = PublicUtility;
+			sourceTree = "<group>";
+		};
 		ABE30C2FFB45E08949E8E1EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0ED342D41AC6C8BE009F18E5 /* OpenGLES.framework */,
+				0ED342D21AC6C8B4009F18E5 /* CoreGraphics.framework */,
+				0ED342D01AC6C8A7009F18E5 /* Accelerate.framework */,
+				0ED342CE1AC6C89D009F18E5 /* AVFoundation.framework */,
+				0ED342CC1AC6C6B4009F18E5 /* QuartzCore.framework */,
+				0ED342CA1AC6C6A9009F18E5 /* Foundation.framework */,
+				0ED342C81AC6C6A0009F18E5 /* UIKit.framework */,
+				0ED342C61AC6C697009F18E5 /* AudioToolbox.framework */,
 				CC119C3E2AB6E05E422F9374 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -283,7 +413,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED342B41AC6BFF3009F18E5 /* fft_off.png in Resources */,
+				0ED342B91AC6BFF3009F18E5 /* sonogram.png in Resources */,
+				0ED342B31AC6BFF3009F18E5 /* button_press.caf in Resources */,
+				0ED342B81AC6BFF3009F18E5 /* oscilloscope.png in Resources */,
 				0ECA65DE1ABF58B40068B8FC /* Main.storyboard in Resources */,
+				0ED342B61AC6BFF3009F18E5 /* mute_off.png in Resources */,
+				0ED342B51AC6BFF3009F18E5 /* fft_on.png in Resources */,
+				0ED342B71AC6BFF3009F18E5 /* mute_on.png in Resources */,
 				0ECA65E31ABF58B40068B8FC /* LaunchScreen.xib in Resources */,
 				0ECA65E01ABF58B40068B8FC /* Images.xcassets in Resources */,
 			);
@@ -336,11 +473,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED342C51AC6C2F8009F18E5 /* CAXException.cpp in Sources */,
+				0ED342941AC6BF5C009F18E5 /* TestAudioManager.m in Sources */,
 				0E89E4611AC21E0600B142B3 /* TestCameraViewController.m in Sources */,
+				0ED342AD1AC6BFF3009F18E5 /* AudioController.mm in Sources */,
 				0ECA65D81ABF58B40068B8FC /* AppDelegate.m in Sources */,
+				0ED342C31AC6C2F8009F18E5 /* CADebugMacros.cpp in Sources */,
 				0ECA65D51ABF58B40068B8FC /* main.m in Sources */,
 				0E89E45E1AC21B9000B142B3 /* TestViewController.m in Sources */,
 				0ECA662D1ABF637E0068B8FC /* LoginViewController.m in Sources */,
+				0ED342C41AC6C2F8009F18E5 /* CAStreamBasicDescription.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +607,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = React/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -476,6 +619,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = React/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

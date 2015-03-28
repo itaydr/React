@@ -10,6 +10,7 @@
 #import <PBJVision.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "AudioController.h"
 
 @interface TestCameraViewController () <PBJVisionDelegate>
 
@@ -18,6 +19,8 @@
 @property (nonatomic, strong)   UILongPressGestureRecognizer *longPress;
 @property (nonatomic, assign)   BOOL    isRecording;
 @property (nonatomic, strong)   NSMutableArray *moviePlayers;
+
+@property (nonatomic, strong)   AudioController *audioController;
 
 @end
 
@@ -31,7 +34,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    [self initAudio];
     _assetLibrary = [[ALAssetsLibrary alloc] init];
     // Do any additional setup after loading the view.
     [self setupCameraView];
@@ -40,6 +43,36 @@
     self.longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGestureRecognizer:)];
     [self.previewView addGestureRecognizer:_longPress];
     self.moviePlayers = [NSMutableArray array];
+    
+//    NSError *error  = nil;
+//    if (![[[AVAudioSession sharedInstance] category] isEqualToString:AVAudioSessionCategoryPlayAndRecord]) {
+//        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord withOptions:(AVAudioSessionCategoryOptionDefaultToSpeaker | AVAudioSessionCategoryOptionAllowBluetooth) error:&error];
+//        NSLog(@"setCategory error = %@", error);
+//        [[AVAudioSession sharedInstance] setMode:AVAudioSessionModeVideoChat error:&error];
+//        NSLog(@"setActive error = %@", error);
+//        [[AVAudioSession sharedInstance] setActive:YES error:&error];
+//        NSLog(@"setActive error = %@", error);
+//    }
+//    
+//    
+
+//    NSError *error  = nil;
+//    [[AVAudioSession sharedInstance] setActive:NO error:&error];
+//    
+//    [[AVAudioSession sharedInstance] setActive:YES error:&error];
+//    NSLog(@"setActive error = %@", error);
+//    
+//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:&error];
+//    NSLog(@"setCategory error = %@", error);
+//    
+//    [[AVAudioSession sharedInstance] setMode:AVAudioSessionModeVideoChat error:&error];
+//    NSLog(@"setMode error = %@", error);
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self.audioController startIOUnit];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,6 +89,8 @@
         case UIGestureRecognizerStateBegan:
         {
             if (!self.isRecording) {
+
+            
                 [[PBJVision sharedInstance] startVideoCapture];
                 self.isRecording = YES;
             }
@@ -209,6 +244,14 @@ static int i = 0;
     [self presentMoviePlayerViewControllerAnimated:movieController];
     movieController.moviePlayer.view.layer.cornerRadius = 0.5 * movieController.moviePlayer.view.bounds.size.width;
     [movieController.moviePlayer play];
+}
+
+
+
+#pragma mark Audio
+
+- (void)initAudio {
+    self.audioController = [[AudioController alloc] init];
 }
 
 @end

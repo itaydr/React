@@ -12,11 +12,13 @@ PODS:
     - ParseFacebookUtils (~> 1.6)
   - PBJVision (0.4.0)
   - pop (1.0.7)
+  - TheAmazingAudioEngine (1.4.6)
 
 DEPENDENCIES:
   - ParseUI
   - PBJVision
   - pop
+  - TheAmazingAudioEngine
 
 SPEC CHECKSUMS:
   Bolts: dd9fb8433d67f5acc3b6b4d1379bbc5513d716c1
@@ -26,5 +28,6 @@ SPEC CHECKSUMS:
   ParseUI: f7e9e0e5271f75a19c74ead8fdd95d36160e268e
   PBJVision: f1b256379799784dc26b0cdd39be365e69d188b0
   pop: 2f14a1ea61339767af9e66741b418c831b3844df
+  TheAmazingAudioEngine: d4c027506d6b8b025c5947fb401a972ccf7574f3
 
 COCOAPODS: 0.35.0

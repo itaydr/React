@@ -36,6 +36,7 @@
 		0ED342D11AC6C8A7009F18E5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED342D01AC6C8A7009F18E5 /* Accelerate.framework */; };
 		0ED342D31AC6C8B4009F18E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED342D21AC6C8B4009F18E5 /* CoreGraphics.framework */; };
 		0ED342D51AC6C8BE009F18E5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED342D41AC6C8BE009F18E5 /* OpenGLES.framework */; };
+		0ED342DB1AC73A2E009F18E5 /* AudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED342DA1AC73A2E009F18E5 /* AudioManager.m */; };
 		3CBB2840227CA709595E1C40 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC119C3E2AB6E05E422F9374 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,8 @@
 		0ED342D01AC6C8A7009F18E5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		0ED342D21AC6C8B4009F18E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0ED342D41AC6C8BE009F18E5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0ED342D91AC73A2E009F18E5 /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
+		0ED342DA1AC73A2E009F18E5 /* AudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioManager.m; sourceTree = "<group>"; };
 		9867F4968E1206FF202280DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BB6EF320368387407B9CC74B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CC119C3E2AB6E05E422F9374 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +166,7 @@
 		0ECA65D11ABF58B40068B8FC /* React */ = {
 			isa = PBXGroup;
 			children = (
+				0ED342D81AC73A1D009F18E5 /* Audio */,
 				0ECA66261ABF63460068B8FC /* Controller */,
 				0ECA66281ABF63460068B8FC /* Model */,
 				0ECA66291ABF63460068B8FC /* Support */,
@@ -304,6 +308,15 @@
 				0ED342C21AC6C2F8009F18E5 /* CAXException.h */,
 			);
 			path = PublicUtility;
+			sourceTree = "<group>";
+		};
+		0ED342D81AC73A1D009F18E5 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				0ED342D91AC73A2E009F18E5 /* AudioManager.h */,
+				0ED342DA1AC73A2E009F18E5 /* AudioManager.m */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		ABE30C2FFB45E08949E8E1EA /* Frameworks */ = {
@@ -475,6 +488,7 @@
 			files = (
 				0ED342C51AC6C2F8009F18E5 /* CAXException.cpp in Sources */,
 				0ED342941AC6BF5C009F18E5 /* TestAudioManager.m in Sources */,
+				0ED342DB1AC73A2E009F18E5 /* AudioManager.m in Sources */,
 				0E89E4611AC21E0600B142B3 /* TestCameraViewController.m in Sources */,
 				0ED342AD1AC6BFF3009F18E5 /* AudioController.mm in Sources */,
 				0ECA65D81ABF58B40068B8FC /* AppDelegate.m in Sources */,

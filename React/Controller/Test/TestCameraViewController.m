@@ -20,7 +20,7 @@
 @property (nonatomic, assign)   BOOL    isRecording;
 @property (nonatomic, strong)   NSMutableArray *moviePlayers;
 
-@property (nonatomic, strong)   AudioController *audioController;
+//@property (nonatomic, strong)   AudioController *audioController;
 
 @end
 
@@ -72,7 +72,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    [self.audioController startIOUnit];
+    //[self.audioController startIOUnit];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -251,7 +251,7 @@ static int i = 0;
 #pragma mark Audio
 
 - (void)initAudio {
-    self.audioController = [[AudioController alloc] init];
+    //self.audioController = [[AudioController alloc] init];
 }
 
 @end

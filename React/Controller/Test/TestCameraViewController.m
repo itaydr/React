@@ -19,6 +19,7 @@
 @property (nonatomic, strong)   UILongPressGestureRecognizer *longPress;
 @property (nonatomic, assign)   BOOL    isRecording;
 @property (nonatomic, strong)   NSMutableArray *moviePlayers;
+@property (nonatomic, strong)   NSMutableArray *movieViews;
 
 //@property (nonatomic, strong)   AudioController *audioController;
 
@@ -43,36 +44,11 @@
     self.longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGestureRecognizer:)];
     [self.previewView addGestureRecognizer:_longPress];
     self.moviePlayers = [NSMutableArray array];
-    
-//    NSError *error  = nil;
-//    if (![[[AVAudioSession sharedInstance] category] isEqualToString:AVAudioSessionCategoryPlayAndRecord]) {
-//        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord withOptions:(AVAudioSessionCategoryOptionDefaultToSpeaker | AVAudioSessionCategoryOptionAllowBluetooth) error:&error];
-//        NSLog(@"setCategory error = %@", error);
-//        [[AVAudioSession sharedInstance] setMode:AVAudioSessionModeVideoChat error:&error];
-//        NSLog(@"setActive error = %@", error);
-//        [[AVAudioSession sharedInstance] setActive:YES error:&error];
-//        NSLog(@"setActive error = %@", error);
-//    }
-//    
-//    
-
-//    NSError *error  = nil;
-//    [[AVAudioSession sharedInstance] setActive:NO error:&error];
-//    
-//    [[AVAudioSession sharedInstance] setActive:YES error:&error];
-//    NSLog(@"setActive error = %@", error);
-//    
-//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:&error];
-//    NSLog(@"setCategory error = %@", error);
-//    
-//    [[AVAudioSession sharedInstance] setMode:AVAudioSessionModeVideoChat error:&error];
-//    NSLog(@"setMode error = %@", error);
+    self.movieViews = [NSMutableArray array];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
-    //[self.audioController startIOUnit];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -205,7 +181,22 @@ static int i = 0;
 //                     options:0
 //                     context:nil];
     
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(movieTapped:)];
+    [view addGestureRecognizer:tap];
+    
     [self.moviePlayers addObject:player];
+    [self.movieViews addObject:view];
+}
+
+- (void)movieTapped:(id)gesture {
+    UIGestureRecognizer *tap = gesture;
+    for (int i = 0 ; i < self.moviePlayers.count ; i++) {
+        UIView *movieView = self.movieViews[i];
+        if ([tap.view isEqual:movieView]) {
+            AVPlayer *player = [self.moviePlayers objectAtIndex:i];
+            player.volume = player.volume == 0 ? 1 : 0;
+        }
+    }
 }
 
 - (void)playerItemDidReachEnd:(NSNotification*)notification {

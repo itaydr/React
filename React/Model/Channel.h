@@ -10,4 +10,7 @@
 
 @interface Channel : PFObject <PFSubclassing>
 
+@property (nonatomic, strong)   NSString        *displayName;
+@property (nonatomic, strong)   PFFile          *backgroundImage;
+
 @end

@@ -8,7 +8,10 @@
 
 #import "Channel.h"
 
-@implementation Channel 
+@implementation Channel
+
+@dynamic displayName;
+@dynamic backgroundImage;
 
 + (void)load {
     [self registerSubclass];

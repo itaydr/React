@@ -10,6 +10,11 @@
 
 @implementation Reaction
 
+@dynamic from;
+@dynamic to;
+@dynamic media;
+@dynamic thumb;
+
 + (void)load {
     [self registerSubclass];
 }

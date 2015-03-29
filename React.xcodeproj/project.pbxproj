@@ -70,6 +70,7 @@
 		0E4D60321AC80CAD00AFB741 /* ParseUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseUtils.h; sourceTree = "<group>"; };
 		0E4D60331AC80CAD00AFB741 /* ParseUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseUtils.m; sourceTree = "<group>"; };
 		0E4D60351AC80DCD00AFB741 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0E4D60361AC8170900AFB741 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		0E89E45C1AC21B9000B142B3 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		0E89E45D1AC21B9000B142B3 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		0E89E45F1AC21E0600B142B3 /* TestCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCameraViewController.h; sourceTree = "<group>"; };
@@ -206,6 +207,7 @@
 				0ECA65D31ABF58B40068B8FC /* Info.plist */,
 				0ECA65D41ABF58B40068B8FC /* main.m */,
 				0E4D60351AC80DCD00AFB741 /* PrefixHeader.pch */,
+				0E4D60361AC8170900AFB741 /* Constants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

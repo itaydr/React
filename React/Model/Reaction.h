@@ -10,4 +10,9 @@
 
 @interface Reaction : PFObject <PFSubclassing>
 
+@property (nonatomic, strong)   User        *from;
+@property (nonatomic, strong)   Message     *to;
+@property (nonatomic, strong)   PFFile      *media;
+@property (nonatomic, strong)   PFFile      *thumb;
+
 @end

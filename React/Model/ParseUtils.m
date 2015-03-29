@@ -14,8 +14,8 @@
 
 + (void)initParseWithOptions:(NSDictionary *)launchOptions  {
     
-    [Parse setApplicationId:@"LQ7sN23PO0iAKdvalvqw35aVeiiKOFOt5QZ0539W"
-                  clientKey:@"k5QUDlmyPQtAxZOgHFBAHmHESvgy4bybRJ3tHLYh"];
+    [Parse setApplicationId:kParseAppId
+                  clientKey:kParseClientKey];
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     

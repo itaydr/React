@@ -10,6 +10,13 @@
 
 @implementation Message
 
+@dynamic owner;
+@dynamic media;
+@dynamic participants;
+@dynamic thumb;
+@dynamic type;
+@dynamic isPrivate;
+
 + (void)load {
     [self registerSubclass];
 }
@@ -17,5 +24,14 @@
 + (NSString *)parseClassName {
     return @"Message";
 }
+
+- (BOOL)isPhotoMessage {
+    return [self.type isEqualToString:MessageTypePhoto];
+}
+
+- (BOOL)isVideoMessage {
+    return [self.type isEqualToString:MessageTypeVideo];
+}
+
 
 @end

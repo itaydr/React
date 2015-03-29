@@ -11,6 +11,9 @@
 
 #ifdef __OBJC__
 
+#import "Constants.h"
+
+// Model
 #import "User.h"
 #import "Message.h"
 #import "Reaction.h"

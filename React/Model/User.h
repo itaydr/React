@@ -15,4 +15,6 @@
 @property (strong, nonatomic) PFFile                        *profilePic;
 @property (nonatomic, strong) NSDate                        *lastFacebookFriendsFetchDate;
 
+- (void)registerFacebookFriends;
+
 @end

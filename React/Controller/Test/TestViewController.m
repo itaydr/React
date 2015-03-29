@@ -39,6 +39,9 @@
 }
 
 - (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
+    if ([User currentUser]) {
+        [[User currentUser] registerFacebookFriends];
+    }
     [logInController dismissViewControllerAnimated:YES completion:nil];
 }
 

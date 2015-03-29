@@ -14,6 +14,9 @@
 		0E4D60311AC80B5400AFB741 /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D60301AC80B5400AFB741 /* Channel.m */; };
 		0E4D60341AC80CAD00AFB741 /* ParseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D60331AC80CAD00AFB741 /* ParseUtils.m */; };
 		0E4D603C1AC81D6E00AFB741 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D603B1AC81D6E00AFB741 /* Group.m */; };
+		0E4D60431AC86AC200AFB741 /* CreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D60421AC86AC200AFB741 /* CreationViewController.m */; };
+		0E4D60461AC86AED00AFB741 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D60451AC86AED00AFB741 /* ViewController.m */; };
+		0E4D604A1AC86BC000AFB741 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D60491AC86BC000AFB741 /* TabBarController.m */; };
 		0E89E45E1AC21B9000B142B3 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E45D1AC21B9000B142B3 /* TestViewController.m */; };
 		0E89E4611AC21E0600B142B3 /* TestCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E4601AC21E0600B142B3 /* TestCameraViewController.m */; };
 		0ECA65D51ABF58B40068B8FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA65D41ABF58B40068B8FC /* main.m */; };
@@ -74,6 +77,12 @@
 		0E4D60361AC8170900AFB741 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		0E4D603A1AC81D6E00AFB741 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
 		0E4D603B1AC81D6E00AFB741 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		0E4D60411AC86AC200AFB741 /* CreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreationViewController.h; sourceTree = "<group>"; };
+		0E4D60421AC86AC200AFB741 /* CreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreationViewController.m; sourceTree = "<group>"; };
+		0E4D60441AC86AED00AFB741 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0E4D60451AC86AED00AFB741 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0E4D60481AC86BC000AFB741 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		0E4D60491AC86BC000AFB741 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		0E89E45C1AC21B9000B142B3 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		0E89E45D1AC21B9000B142B3 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		0E89E45F1AC21E0600B142B3 /* TestCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCameraViewController.h; sourceTree = "<group>"; };
@@ -152,6 +161,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E4D60401AC86AC200AFB741 /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				0E4D60411AC86AC200AFB741 /* CreationViewController.h */,
+				0E4D60421AC86AC200AFB741 /* CreationViewController.m */,
+			);
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		0E4D60471AC86B9800AFB741 /* Tab Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E4D60481AC86BC000AFB741 /* TabBarController.h */,
+				0E4D60491AC86BC000AFB741 /* TabBarController.m */,
+			);
+			path = "Tab Controller";
+			sourceTree = "<group>";
+		};
 		0E89E45B1AC21B7400B142B3 /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,8 +262,12 @@
 		0ECA66261ABF63460068B8FC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0E4D60471AC86B9800AFB741 /* Tab Controller */,
+				0E4D60401AC86AC200AFB741 /* Creation */,
 				0E89E45B1AC21B7400B142B3 /* Test */,
 				0ECA66271ABF63460068B8FC /* Login */,
+				0E4D60441AC86AED00AFB741 /* ViewController.h */,
+				0E4D60451AC86AED00AFB741 /* ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -525,11 +556,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4D604A1AC86BC000AFB741 /* TabBarController.m in Sources */,
 				0E4D60281AC80A1100AFB741 /* Reaction.m in Sources */,
 				0E4D602E1AC80A9400AFB741 /* Action.m in Sources */,
 				0ED342C51AC6C2F8009F18E5 /* CAXException.cpp in Sources */,
 				0ED342941AC6BF5C009F18E5 /* TestAudioManager.m in Sources */,
 				0ED342DB1AC73A2E009F18E5 /* AudioManager.m in Sources */,
+				0E4D60431AC86AC200AFB741 /* CreationViewController.m in Sources */,
 				0E89E4611AC21E0600B142B3 /* TestCameraViewController.m in Sources */,
 				0ED342AD1AC6BFF3009F18E5 /* AudioController.mm in Sources */,
 				0ECA65D81ABF58B40068B8FC /* AppDelegate.m in Sources */,
@@ -538,6 +571,7 @@
 				0ECA65D51ABF58B40068B8FC /* main.m in Sources */,
 				0E4D60221AC809C800AFB741 /* User.m in Sources */,
 				0E89E45E1AC21B9000B142B3 /* TestViewController.m in Sources */,
+				0E4D60461AC86AED00AFB741 /* ViewController.m in Sources */,
 				0ECA662D1ABF637E0068B8FC /* LoginViewController.m in Sources */,
 				0E4D60311AC80B5400AFB741 /* Channel.m in Sources */,
 				0E4D60251AC809FE00AFB741 /* Message.m in Sources */,

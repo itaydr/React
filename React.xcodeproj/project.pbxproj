@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E4D60221AC809C800AFB741 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D60211AC809C800AFB741 /* User.m */; };
+		0E4D60251AC809FE00AFB741 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D60241AC809FE00AFB741 /* Message.m */; };
+		0E4D60281AC80A1100AFB741 /* Reaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D60271AC80A1100AFB741 /* Reaction.m */; };
+		0E4D602E1AC80A9400AFB741 /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D602D1AC80A9400AFB741 /* Action.m */; };
+		0E4D60311AC80B5400AFB741 /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D60301AC80B5400AFB741 /* Channel.m */; };
+		0E4D60341AC80CAD00AFB741 /* ParseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D60331AC80CAD00AFB741 /* ParseUtils.m */; };
 		0E89E45E1AC21B9000B142B3 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E45D1AC21B9000B142B3 /* TestViewController.m */; };
 		0E89E4611AC21E0600B142B3 /* TestCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E4601AC21E0600B142B3 /* TestCameraViewController.m */; };
 		0ECA65D51ABF58B40068B8FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA65D41ABF58B40068B8FC /* main.m */; };
@@ -51,6 +57,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E4D60201AC809C800AFB741 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		0E4D60211AC809C800AFB741 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		0E4D60231AC809FE00AFB741 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		0E4D60241AC809FE00AFB741 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		0E4D60261AC80A1100AFB741 /* Reaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reaction.h; sourceTree = "<group>"; };
+		0E4D60271AC80A1100AFB741 /* Reaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reaction.m; sourceTree = "<group>"; };
+		0E4D602C1AC80A9400AFB741 /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
+		0E4D602D1AC80A9400AFB741 /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Action.m; sourceTree = "<group>"; };
+		0E4D602F1AC80B5400AFB741 /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		0E4D60301AC80B5400AFB741 /* Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
+		0E4D60321AC80CAD00AFB741 /* ParseUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseUtils.h; sourceTree = "<group>"; };
+		0E4D60331AC80CAD00AFB741 /* ParseUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseUtils.m; sourceTree = "<group>"; };
+		0E4D60351AC80DCD00AFB741 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0E89E45C1AC21B9000B142B3 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		0E89E45D1AC21B9000B142B3 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		0E89E45F1AC21E0600B142B3 /* TestCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCameraViewController.h; sourceTree = "<group>"; };
@@ -186,6 +205,7 @@
 			children = (
 				0ECA65D31ABF58B40068B8FC /* Info.plist */,
 				0ECA65D41ABF58B40068B8FC /* main.m */,
+				0E4D60351AC80DCD00AFB741 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -228,6 +248,18 @@
 		0ECA66281ABF63460068B8FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0E4D60201AC809C800AFB741 /* User.h */,
+				0E4D60211AC809C800AFB741 /* User.m */,
+				0E4D60231AC809FE00AFB741 /* Message.h */,
+				0E4D60241AC809FE00AFB741 /* Message.m */,
+				0E4D60261AC80A1100AFB741 /* Reaction.h */,
+				0E4D60271AC80A1100AFB741 /* Reaction.m */,
+				0E4D602C1AC80A9400AFB741 /* Action.h */,
+				0E4D602D1AC80A9400AFB741 /* Action.m */,
+				0E4D602F1AC80B5400AFB741 /* Channel.h */,
+				0E4D60301AC80B5400AFB741 /* Channel.m */,
+				0E4D60321AC80CAD00AFB741 /* ParseUtils.h */,
+				0E4D60331AC80CAD00AFB741 /* ParseUtils.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -486,6 +518,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4D60281AC80A1100AFB741 /* Reaction.m in Sources */,
+				0E4D602E1AC80A9400AFB741 /* Action.m in Sources */,
 				0ED342C51AC6C2F8009F18E5 /* CAXException.cpp in Sources */,
 				0ED342941AC6BF5C009F18E5 /* TestAudioManager.m in Sources */,
 				0ED342DB1AC73A2E009F18E5 /* AudioManager.m in Sources */,
@@ -494,8 +528,12 @@
 				0ECA65D81ABF58B40068B8FC /* AppDelegate.m in Sources */,
 				0ED342C31AC6C2F8009F18E5 /* CADebugMacros.cpp in Sources */,
 				0ECA65D51ABF58B40068B8FC /* main.m in Sources */,
+				0E4D60221AC809C800AFB741 /* User.m in Sources */,
 				0E89E45E1AC21B9000B142B3 /* TestViewController.m in Sources */,
 				0ECA662D1ABF637E0068B8FC /* LoginViewController.m in Sources */,
+				0E4D60311AC80B5400AFB741 /* Channel.m in Sources */,
+				0E4D60251AC809FE00AFB741 /* Message.m in Sources */,
+				0E4D60341AC80CAD00AFB741 /* ParseUtils.m in Sources */,
 				0ED342C41AC6C2F8009F18E5 /* CAStreamBasicDescription.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,6 +657,7 @@
 			baseConfigurationReference = BB6EF320368387407B9CC74B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = React/PrefixHeader.pch;
 				INFOPLIST_FILE = React/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -631,6 +670,7 @@
 			baseConfigurationReference = 9867F4968E1206FF202280DA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = React/PrefixHeader.pch;
 				INFOPLIST_FILE = React/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;

@@ -7,9 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import <Parse/Parse.h>
-#import <PFFacebookUtils.h>
+#import "ParseUtils.h"
 #import "AudioManager.h"
+#import <PFFacebookUtils.h>
 
 @interface AppDelegate ()
 
@@ -21,13 +21,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [[AudioManager sharedManager] startRunning];
+    [ParseUtils initParseWithOptions:launchOptions];
     
-    [Parse setApplicationId:@"LQ7sN23PO0iAKdvalvqw35aVeiiKOFOt5QZ0539W"
-                  clientKey:@"k5QUDlmyPQtAxZOgHFBAHmHESvgy4bybRJ3tHLYh"];
-    
-    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
-    [PFFacebookUtils initializeFacebook];
     return YES;
 }
 

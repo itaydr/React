@@ -19,6 +19,7 @@
 #import "Reaction.h"
 #import "Action.h"
 #import "Channel.h"
+#import "Group.h"
 
 #endif
 

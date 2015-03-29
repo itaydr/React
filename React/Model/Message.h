@@ -7,6 +7,7 @@
 //
 
 #import <Parse/Parse.h>
+#import "Group.h"
 
 #define MessageTypeVideo  @"video"
 #define MessageTypePhoto  @"photo"
@@ -15,7 +16,7 @@
 
 @property (nonatomic, strong)   User        *owner;
 @property (nonatomic, strong)   PFFile      *media;
-@property (nonatomic, strong)   NSArray     *participants;
+@property (nonatomic, strong)   Group       *group;
 @property (nonatomic, strong)   PFFile      *thumb;
 @property (nonatomic, strong)   NSString    *type;
 @property (nonatomic, assign)   BOOL        isPrivate;

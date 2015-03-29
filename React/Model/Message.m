@@ -12,7 +12,7 @@
 
 @dynamic owner;
 @dynamic media;
-@dynamic participants;
+@dynamic group;
 @dynamic thumb;
 @dynamic type;
 @dynamic isPrivate;
